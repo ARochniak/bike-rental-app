@@ -1,0 +1,80 @@
+.creation-panel__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 5px 10px;
+
+  background-color: #eaecee;
+  border: 1px solid #d4d7d8;
+  border-radius: 3px;
+}
+
+.creation-panel__form > div {
+  flex-shrink: 1;
+}
+
+.creation-panel__form input,
+.creation-panel__form select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  padding: 12px;
+
+  border: 1px solid #d0d0d4;
+  border-radius: 3px;
+}
+
+.creation-panel__type,
+.creation-panel__name {
+  flex-basis: 48%;
+}
+
+.creation-panel__price {
+  flex-basis: 48%;
+  margin-top: 10px;
+}
+
+.creation-panel__submit {
+  max-width: 125px;
+}
+
+.creation-panel__form p {
+  margin: 0 0 8px;
+}
+
+.creation-panel__submit input {
+  color: white;
+
+  background-color: #28b898;
+  border: 1px solid #28b894;
+  cursor: pointer;
+
+  transition: box-shadow 150ms linear;
+}
+
+.creation-panel__submit input:hover {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.55);
+}
+
+@media (min-width: 480px) {
+  .creation-panel__form {
+    flex-wrap: nowrap;
+    padding: 20px 30px;
+  }
+
+  .creation-panel__type,
+  .creation-panel__name {
+    flex-basis: auto;
+    width: 280px;
+  }
+
+  .creation-panel__price {
+    flex-basis: auto;
+    margin-top: 0;
+  }
+
+  .creation-panel__form > div:nth-child(-n + 3) {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,32 @@
+.bike-rental {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 4vw;
+
+  color: #4a4a4a;
+
+  font-family: sans-serif;
+
+  background-color: #f5f5f5;
+}
+
+.bike-rental__tittle {
+  margin-bottom: 30px;
+}
+
+.bike-rental__creation-panel {
+  margin-bottom: 35px;
+}
+
+@media (min-width: 480px) {
+  .bike-rental {
+    padding: 0 8vw;
+  }
+}
+
+@media (min-width: 780px) {
+  .bike-rental {
+    padding: 0 16vw;
+  }
+}

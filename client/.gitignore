@@ -1,0 +1,18 @@
+# Файлы и папки операционной системы
+.DS_Store
+Thumbs.db
+
+.idea
+*.sublime*
+.vscode
+
+*.log*
+node_modules/
+
+build/
+
+public/bundle.js
+public/bundle.js.map
+public/main.css
+public/main.css.map
+public/images

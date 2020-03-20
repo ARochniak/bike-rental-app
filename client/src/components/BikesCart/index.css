@@ -1,0 +1,80 @@
+.bikes-cart__rent-list {
+  margin-bottom: 35px;
+}
+
+.bikes-cart__rent-list,
+.bikes-cart__available-list {
+  padding: 0;
+
+  list-style: none;
+}
+
+.bikes-cart__rent-list > li,
+.bikes-cart__available-list > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 5px 10px;
+
+  background-color: white;
+  border: 1px solid #d6d6d6;
+
+  border-radius: 3px;
+}
+
+.bikes-cart__rent-list > li:last-child,
+.bikes-cart__available-list > li:last-child {
+  margin-bottom: 0;
+}
+
+.bikes-cart__available-list > li > div {
+  flex-shrink: 0;
+}
+
+.bikes-cart__rent-list p,
+.bikes-cart__available-list p {
+  margin: 0;
+}
+
+.bikes-cart button {
+  flex-shrink: 0;
+  margin-left: 10px;
+  padding: 12px;
+
+  color: white;
+
+  border-radius: 3px;
+  cursor: pointer;
+
+  transition: box-shadow 150ms linear;
+}
+
+.bikes-cart__available-list button,
+.bikes-cart__rent-list button {
+  background-color: #f1323f;
+
+  border: 1px solid #e03d42;
+}
+
+.bikes-cart button:hover {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.55);
+}
+
+.bikes-cart__available-list > li > div > button:first-child {
+  margin-right: 5px;
+
+  background-color: #3650c8;
+  border-color: #3f51b8;
+}
+
+@media (min-width: 480px) {
+  .bikes-cart__rent-list li,
+  .bikes-cart__available-list li {
+    padding: 20px 30px;
+  }
+
+  .bikes-cart button {
+    width: 125px;
+  }
+}
